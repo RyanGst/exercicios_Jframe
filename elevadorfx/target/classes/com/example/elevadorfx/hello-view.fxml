@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="496.0" prefWidth="516.0" spacing="20.0" style="-fx-background-color: #0D0C13;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elevadorfx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="statusText" textFill="WHITE" />
+   <TextField fx:id="inicializaAndares" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="201.0" promptText="TOTAL ANDARES" />
+   <TextField fx:id="inicializaCapacidade" layoutX="168.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="201.0" promptText="CAPACIDADE INICIAL" />
+    <Button fx:id="inicializa" onAction="#setInicializa" prefHeight="26.0" prefWidth="180.0" text="INICIALIZA ELEVADOR" />
+   <Button fx:id="entra" layoutX="178.0" layoutY="227.0" onAction="#setEntra" prefHeight="26.0" prefWidth="180.0" text="ENTRA" />
+   <Button fx:id="sai" layoutX="178.0" layoutY="250.0" onAction="#setSai" prefHeight="26.0" prefWidth="180.0" text="SAI" />
+   <Button fx:id="sobe" layoutX="178.0" layoutY="273.0" onAction="#setSobe" prefHeight="26.0" prefWidth="180.0" text="SOBE" />
+   <Button fx:id="desce" layoutX="178.0" layoutY="332.0" onAction="#setDesce" prefHeight="26.0" prefWidth="180.0" text="DESCE" />
+</VBox>
